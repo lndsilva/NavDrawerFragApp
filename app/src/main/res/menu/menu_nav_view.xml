@@ -1,4 +1,53 @@
 <?xml version="1.0" encoding="utf-8"?>
-<menu xmlns:android="http://schemas.android.com/apk/res/android">
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigationView">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/mNavHome"
+            android:icon="@drawable/baseline_home"
+            android:title="Home" />
+        <item
+            android:id="@+id/mNavMessage"
+            android:icon="@drawable/baseline_message"
+            android:title="Message" />
+        <item
+            android:id="@+id/mNavSynch"
+            android:icon="@drawable/baseline_sync"
+            android:title="Synch" />
+        <item
+            android:id="@+id/mNavTrash"
+            android:icon="@drawable/baseline_delete"
+            android:title="Trash" />
+        <item
+            android:id="@+id/mNavSettings"
+            android:icon="@drawable/baseline_settings"
+            android:title="Home" />
+    </group>
+    <item android:title="Profile">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/mNavLogin"
+                    android:icon="@drawable/baseline_login"
+                    android:title="Login" />
+            </group>
+        </menu>
+    </item>
+    <item android:title="Communicate">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/mNavShare"
+                    android:icon="@drawable/baseline_share"
+                    android:title="Share" />
+                <item
+                    android:id="@+id/mNavRate"
+                    android:icon="@drawable/baseline_rate_review"
+                    android:title="Rate us" />
+            </group>
+        </menu>
+    </item>
 
 </menu>
