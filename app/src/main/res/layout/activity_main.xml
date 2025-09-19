@@ -16,6 +16,14 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
 
+            <com.google.android.material.appbar.MaterialToolbar
+                android:id="@+id/idTopAppBar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:background="#2196F3"
+                app:navigationIcon="@drawable/baseline_menu"
+                app:title="SystemApp" />
+
         </com.google.android.material.appbar.AppBarLayout>
 
         <TextView
@@ -29,19 +37,13 @@
             android:textSize="25sp"
             android:textStyle="bold" />
 
-        <com.google.android.material.appbar.MaterialToolbar
-            android:id="@+id/idTopAppBar"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="#2196F3"
-            app:navigationIcon="@drawable/baseline_menu"
-            app:title="SystemApp" />
 
         <FrameLayout
             android:id="@+id/framelayout"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_below="@id/idAppBarLayout" />
+            android:layout_below="@id/idAppBarLayout"
+            android:layout_marginTop="-4dp" />
 
     </RelativeLayout>
 
